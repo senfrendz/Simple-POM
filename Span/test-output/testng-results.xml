@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="11" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="POM Test Suite" duration-ms="167365" started-at="2020-12-29T15:31:26Z" finished-at="2020-12-29T15:34:13Z">
+    <groups>
+    </groups>
+    <test name="SignUp Validation" duration-ms="167365" started-at="2020-12-29T15:31:26Z" finished-at="2020-12-29T15:34:13Z">
+      <class name="TestCases.signUpValidation">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="launchBrowser" is-config="true" duration-ms="8" started-at="2020-12-29T15:31:26Z" finished-at="2020-12-29T15:31:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="configExtentReport()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="configExtentReport" is-config="true" duration-ms="142" started-at="2020-12-29T15:31:26Z" finished-at="2020-12-29T15:31:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configExtentReport -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="Setup" is-config="true" duration-ms="9273" started-at="2020-12-29T15:31:27Z" finished-at="2020-12-29T15:31:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifySignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="verifySignUp" duration-ms="3959" started-at="2020-12-29T15:31:36Z" data-provider="TestDataParse" finished-at="2020-12-29T15:31:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sen10663@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Senthil]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Raju]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sen10663@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8883337086]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="tearDown" is-config="true" duration-ms="877" started-at="2020-12-29T15:31:40Z" finished-at="2020-12-29T15:31:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="Setup" is-config="true" duration-ms="8084" started-at="2020-12-29T15:31:41Z" finished-at="2020-12-29T15:31:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="FAIL" signature="verifySignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="verifySignUp" duration-ms="6003" started-at="2020-12-29T15:31:49Z" data-provider="TestDataParse" finished-at="2020-12-29T15:31:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sen21@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[S]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Star]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sen21@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8585858585]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Australia]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [1]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:442)
+at Pages.Register.Signup(Register.java:40)
+at TestCases.signUpValidation.verifySignUp(signUpValidation.java:59)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="tearDown" is-config="true" duration-ms="661" started-at="2020-12-29T15:31:55Z" finished-at="2020-12-29T15:31:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="Setup" is-config="true" duration-ms="8705" started-at="2020-12-29T15:31:55Z" finished-at="2020-12-29T15:32:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifySignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="verifySignUp" duration-ms="5226" started-at="2020-12-29T15:32:04Z" data-provider="TestDataParse" finished-at="2020-12-29T15:32:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sen@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SenRaju]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[R]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sengmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[898989898]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Argentina]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="tearDown" is-config="true" duration-ms="806" started-at="2020-12-29T15:32:09Z" finished-at="2020-12-29T15:32:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="Setup" is-config="true" duration-ms="8795" started-at="2020-12-29T15:32:10Z" finished-at="2020-12-29T15:32:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifySignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="verifySignUp" duration-ms="5372" started-at="2020-12-29T15:32:19Z" data-provider="TestDataParse" finished-at="2020-12-29T15:32:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cbrian0@imgur.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cammie]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Brian]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cbrian0@imgur.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[7708585285]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Indonesia]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="tearDown" is-config="true" duration-ms="662" started-at="2020-12-29T15:32:24Z" finished-at="2020-12-29T15:32:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="Setup" is-config="true" duration-ms="8206" started-at="2020-12-29T15:32:25Z" finished-at="2020-12-29T15:32:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifySignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="verifySignUp" duration-ms="5647" started-at="2020-12-29T15:32:33Z" data-provider="TestDataParse" finished-at="2020-12-29T15:32:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mgladman1@rambler.ru]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Michaeline]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gladman]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[mgladman1@rambler.ru]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8582512163]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Poland]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="tearDown" is-config="true" duration-ms="649" started-at="2020-12-29T15:32:39Z" finished-at="2020-12-29T15:32:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="Setup" is-config="true" duration-ms="9256" started-at="2020-12-29T15:32:40Z" finished-at="2020-12-29T15:32:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifySignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="verifySignUp" duration-ms="4445" started-at="2020-12-29T15:32:49Z" data-provider="TestDataParse" finished-at="2020-12-29T15:32:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kortes2@walmart.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Keith]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ortes]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[kortes2@walmart.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8585202020]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Paraguay]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="tearDown" is-config="true" duration-ms="837" started-at="2020-12-29T15:32:53Z" finished-at="2020-12-29T15:32:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="Setup" is-config="true" duration-ms="9086" started-at="2020-12-29T15:32:54Z" finished-at="2020-12-29T15:33:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifySignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="verifySignUp" duration-ms="6273" started-at="2020-12-29T15:33:03Z" data-provider="TestDataParse" finished-at="2020-12-29T15:33:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[agribbin3@amazon.co.uk]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Amandie]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Gribbin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[agribbin3@amazon.co.uk]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[7708585286]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Philippines]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="tearDown" is-config="true" duration-ms="751" started-at="2020-12-29T15:33:09Z" finished-at="2020-12-29T15:33:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="Setup" is-config="true" duration-ms="7908" started-at="2020-12-29T15:33:10Z" finished-at="2020-12-29T15:33:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifySignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="verifySignUp" duration-ms="6099" started-at="2020-12-29T15:33:18Z" data-provider="TestDataParse" finished-at="2020-12-29T15:33:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[llegging4@alexa.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Lesley]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Legging]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[llegging4@alexa.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8989892525]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[China]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="tearDown" is-config="true" duration-ms="1007" started-at="2020-12-29T15:33:24Z" finished-at="2020-12-29T15:33:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="Setup" is-config="true" duration-ms="8249" started-at="2020-12-29T15:33:25Z" finished-at="2020-12-29T15:33:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifySignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="verifySignUp" duration-ms="8533" started-at="2020-12-29T15:33:33Z" data-provider="TestDataParse" finished-at="2020-12-29T15:33:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[callmond5@eventbrite.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Cassandre]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Allmond]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[callmond5@eventbrite.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8883337087]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Sweden]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="tearDown" is-config="true" duration-ms="702" started-at="2020-12-29T15:33:42Z" finished-at="2020-12-29T15:33:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="Setup" is-config="true" duration-ms="8562" started-at="2020-12-29T15:33:43Z" finished-at="2020-12-29T15:33:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifySignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="verifySignUp" duration-ms="6468" started-at="2020-12-29T15:33:51Z" data-provider="TestDataParse" finished-at="2020-12-29T15:33:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gkeeting6@is.gd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gherardo]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Keeting]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[gkeeting6@is.gd]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[25224251]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[China]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="tearDown" is-config="true" duration-ms="744" started-at="2020-12-29T15:33:58Z" finished-at="2020-12-29T15:33:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="Setup()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="Setup" is-config="true" duration-ms="7663" started-at="2020-12-29T15:33:58Z" finished-at="2020-12-29T15:34:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method status="PASS" signature="verifySignUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="verifySignUp" duration-ms="6306" started-at="2020-12-29T15:34:06Z" data-provider="TestDataParse" finished-at="2020-12-29T15:34:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amattek7@newsvine.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Andriana]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mattek]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[amattek7@newsvine.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8883337088]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Russia]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestCases.signUpValidation@1c2b765]" name="tearDown" is-config="true" duration-ms="718" started-at="2020-12-29T15:34:12Z" finished-at="2020-12-29T15:34:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.signUpValidation -->
+    </test> <!-- SignUp Validation -->
+  </suite> <!-- POM Test Suite -->
+</testng-results>

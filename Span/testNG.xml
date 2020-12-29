@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="POM Test Suite" configfailurepolicy="continue">
+<listeners>
+    <listener class-name = "TestCases.signUpValidation"></listener>
+    </listeners>
+<test name="SignUp Validation">
+<classes>
+<class name="TestCases.signUpValidation"></class>
+<!-- <class name="TestCases.RegisterValidation"></class>
+ --></classes>
+</test>
+</suite>

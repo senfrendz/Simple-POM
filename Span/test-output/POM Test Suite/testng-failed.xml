@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [POM Test Suite]">
+  <listeners>
+    <listener class-name="TestCases.signUpValidation"/>
+  </listeners>
+  <test thread-count="5" name="SignUp Validation(failed)">
+    <classes>
+      <class name="TestCases.signUpValidation">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="configExtentReport"/>
+          <include name="tearDown"/>
+          <include name="verifySignUp" invocation-numbers="1"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- TestCases.signUpValidation -->
+    </classes>
+  </test> <!-- SignUp Validation(failed) -->
+</suite> <!-- Failed suite [POM Test Suite] -->
